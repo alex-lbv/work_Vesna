@@ -1,0 +1,51 @@
+include ../components/card
+
+.main-tabs
+  .container
+    ul.nav
+      li
+        a(class="main-tabs__title active", data-toggle="tab", href="#new") Новинки
+
+      li
+        a(class="main-tabs__title", data-toggle="tab", href="#hits") Хиты продаж
+
+    .tab-content
+      div(class="tab-pane fade show active", id="new")
+        .main-tabs__swiper
+          ul.swiper-wrapper
+            li.swiper-slide
+              +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+
+      div(class="tab-pane fade show", id="hits")
+        .main-tabs__swiper
+          ul.swiper-wrapper
+            li.swiper-slide
+              +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+            li.swiper-slide
+              +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")

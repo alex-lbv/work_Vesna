@@ -1,0 +1,26 @@
+.btn {
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  background-color: #f1c756;
+  border: 1px solid #f1c756;
+  border-radius: 0;
+  color: #fffefe;
+  transition: color .3s ease, background-color .3s ease;
+
+  &:hover {
+    color: #f1c756;
+    background-color: #fff;
+  }
+
+
+  &--sm {
+    max-width: 253px;
+  }
+
+  &--lg {
+    max-width: 280px;
+  }
+}

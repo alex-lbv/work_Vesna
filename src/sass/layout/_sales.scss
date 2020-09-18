@@ -1,0 +1,25 @@
+.sales {
+  margin-bottom: 90px;
+
+  .title {
+    text-align: center;
+
+    @media screen and(max-width: 991px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and(min-width: 992px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+
+    .swiper-slide {
+      @media screen and(min-width: 540px) and (max-width: 960px) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

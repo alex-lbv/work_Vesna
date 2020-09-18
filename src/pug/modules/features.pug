@@ -1,0 +1,17 @@
+mixin feature(title, descr, src, srcset, width, height, alt)
+  li(class="features__item")
+    picture
+      source(srcset=srcset, media="(max-width: 991px)",)
+      img(src=src, width=width, height=height, alt=alt)
+
+    .features__item-container
+      p.features__item-title= title
+      p.features__item-description=descr
+
+
+.features
+  .container
+    ul.features__list
+      +feature("бесплатная доставка", "Доставим в день заказа - время выбираете вы!", "img/pic/bg/feature_1.jpg", "img/pic/bg/feature__1_mobile.png", "380", "225", " ")
+      +feature("Бонусная программа", "Начисляем бонусы за каждый заказ!", "img/pic/bg/feature_2.jpg","img/pic/bg/feature__2_mobile.png", "380", "225", " ")
+      +feature("Гарантия качества", "Мы гарантируем качество и свежесть продукции магазина", "img/pic/bg/feature_3.jpg","img/pic/bg/feature__3_mobile.png", "380", "225", " ")

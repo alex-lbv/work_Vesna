@@ -1,0 +1,132 @@
+.about {
+
+  &__container {
+    @media screen and(max-width: 991px) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and(min-width: 992px) {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+    @media screen and(max-width: 991px) {
+      margin-bottom: 30px;
+    }
+
+    &--red {
+      color: #ee8347;
+    }
+
+    &--yellow {
+      color: #f1c756;
+    }
+
+    &--blue {
+      color: #7f9ac4;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    color: #000000;
+
+    @media screen and(max-width: 991px) {
+      margin-bottom: 30px;
+    }
+
+
+    &:not(:last-of-type) {
+      @media screen and(min-width: 992px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__section {
+    position: relative;
+
+    img {
+      @media screen and(max-width: 991px) {
+        //position: absolute;
+        //top: 0;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        height: auto;
+      }
+    }
+
+    div {
+      @media screen and(max-width: 991px) {
+        position: relative;
+        z-index: 1;
+      }
+
+      @media screen and(min-width: 992px) {
+        position: absolute;
+      }
+    }
+
+    &:first-of-type {
+      margin-bottom: 30px;
+
+      div {
+        @media screen and(min-width: 992px) {
+          margin-top: 70px;
+          width: 380px;
+        }
+      }
+
+      img {
+        @media screen and(min-width: 992px) {
+          display: block;
+          margin: auto 0 auto auto;
+        }
+      }
+
+      .about__title {
+        @media screen and(min-width: 992px) {
+          margin-bottom: 54px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 34px;
+
+      div {
+        @media screen and(min-width: 992px) {
+          margin-top: 48px;
+          right: 0;
+          width: 407px;
+        }
+      }
+
+      .about__title {
+        @media screen and(min-width: 992px) {
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+
+  &__description {
+    .about__title {
+      @media screen and(min-width: 992px) {
+        margin-bottom: 55px;
+      }
+    }
+  }
+}

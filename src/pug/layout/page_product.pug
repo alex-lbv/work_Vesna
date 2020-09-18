@@ -1,0 +1,123 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.product
+    block content
+    include ../modules/header
+    include ../components/card
+    include ../components/count
+    main
+      .mask
+      include ../modules/main-banner
+      include ../modules/navigation
+      .container
+        .product__container
+          include ../components/breadcrumbs
+          .product__content
+            .product__swiper
+              .swiper-container.gallery-top
+                .swiper-wrapper
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/product-slider-bg.png)")
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/card_1.png)")
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/card_3.png)")
+              .swiper-container.gallery-thumbs
+                .swiper-wrapper
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/product-slider-bg.png)")
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/card_1.png)")
+                  div(class="swiper-slide" style="background-image:url(../img/pic/temp/card_3.png)")
+            .product__description
+              span.product__title Название товара
+              span.product__brand Brand name
+              span.product__article Артикул:  123456
+              span.product__size Объем: 30 мл
+              span.product__price 1200 Р
+              span.product__stock В наличии
+              div.product__count-container
+                span Количество
+                +count("product__count")
+              div.product__buttons-wrap
+                button(class="btn" type="button") В корзину
+                button.pruduct__favorites
+                  img(src="img/pic/ico/heart-orange_ico.png" width="30" height="24" alt="Добавить в избранное")
+              .product__tabs
+                ul.nav.nav-tabs
+                  li.active
+                    a(class="active" href="#tab-description" data-toggle="tab") Описание
+                  li
+                    a(href="#tab-specification" data-toggle="tab") Применение
+                  li
+                    a(href="#tab-review" data-toggle="tab") Отзывы
+
+                .tab-content
+                  div(class="tab-pane active" id="tab-description")
+                    p.tab-content__text Питательный крем делает кожу гладкой, свежей и наполненной энергией. Подходит для всех типов кожи, снижает видимые признаки старения, обеспечивает длительный увлажняющий эффект. Содержит высокоэффективные олигопептиды. Эксклюзивные протеины шелка увлажняют и защищают кожу. Интенсивно увлажняющий и восстанавливающий крем 4VOO distinct man — это роскошная, питательная, быстро впитывающаяся формула, которая стимулирует и поддерживает естественный процесс обновления кожи, обеспечивая длительное увлажнение и защиту от воздействия вредных факторов окружающей среды. Крем заметно сокращает появление морщин и уменьшает видимые признаки старения, придавая Вашей коже молодой и здоровый вид.
+                    p.tab-content__text Состав: гиалуроновая кислота, пальмитил пентапептид-3, ниацинамид, ретинил пальмитат, токоферола ацетат, экстракт японского зеленого чая, экстракт виноградных косточек.
+
+                  div(class="tab-pane" id="tab-specification")
+                    p.tab-content__text Питательный крем делает кожу гладкой, свежей и наполненной энергией. Подходит для всех типов кожи, снижает видимые признаки старения, обеспечивает длительный увлажняющий эффект. Содержит высокоэффективные олигопептиды. Эксклюзивные протеины шелка увлажняют и защищают кожу. Интенсивно увлажняющий и восстанавливающий крем 4VOO distinct man — это роскошная, питательная, быстро впитывающаяся формула, которая стимулирует и поддерживает естественный процесс обновления кожи, обеспечивая длительное увлажнение и защиту от воздействия вредных факторов окружающей среды. Крем заметно сокращает появление морщин и уменьшает видимые признаки старения, придавая Вашей коже молодой и здоровый вид.
+
+                  div(class="tab-pane" id="tab-review")
+                    form(class="form-horizontal" id="form-review")
+                      div(id="review")
+                        p Нет отзывов об этом товаре.
+                      h2.product__title Написать отзыв
+                      .form-group.required
+                        div
+                          label(class="control-label" for="input-name") Ваше имя
+                          input(type="text" name="name" value="" id="input-name" class="form-control")
+                      .form-group.required
+                        div
+                          label(class="control-label" for="input-review") Ваш отзыв
+                          textarea(name="text" rows="5" id="input-review" class="form-control")
+                          .help-block
+                            | <span style="color: #FF0000;">Примечание:</span>
+                            | HTML разметка не поддерживается! Используйте обычный текст.
+                      .form-group.required
+                        div
+                          label.control-label Рейтинг
+                          span &nbsp;&nbsp;&nbsp; Плохо&nbsp;
+                          input(type="radio" name="rating" value="1")
+                          input(type="radio" name="rating" value="2")
+                          input(type="radio" name="rating" value="3")
+                          input(type="radio" name="rating" value="4")
+                          input(type="radio" name="rating" value="5")
+                          span &nbsp;&nbsp;&nbsp;Хорошо
+                      .buttons.clearfix
+                        .pull-right
+                          button(type="button" id="button-review" data-loading-text="Загрузка..."
+                            class="btn") Продолжить
+
+      .sales
+        .container
+          p.title Вам может понравиться
+          .sales__swiper
+            ul.swiper-wrapper
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+              li.swiper-slide
+                +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+

@@ -1,0 +1,8 @@
+mixin card(link, src, width, height, alt, name, brand_name, price, mod)
+  div(class="card",class=mod)
+    a(class="card__image", href=link)
+      img(src=src, width=width, height=height, alt=alt)
+    p.card__brand-name= brand_name
+    a.card__name(href=link)= name
+    p.card__price= price
+    btn.btn В корзину

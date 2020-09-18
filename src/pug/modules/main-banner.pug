@@ -1,0 +1,18 @@
+mixin slide(title_1part, title_2part, description, src, srcset)
+  .swiper-slide
+    picture
+      source(srcset=srcset, media="(max-width: 991px)")
+      img(class="main-banner__image", src=src)
+    .main-banner__wrap
+      p.main-banner__title
+        span=title_1part
+        br
+        span=title_2part
+      p.main-banner__description=description
+      btn.btn.btn--sm В каталог
+
+.main-banner.container
+  .swiper-wrapper
+    +slide("СКИДКА 10%","на питательные крема", "Our cozy restaurant offers wood fired food with the unique flavors of Florida pines, our pizza is made with","img/pic/temp/slider.jpg","img/pic/temp/banner_2.jpg")
+    +slide("СКИДКА 10%","на питательные крема", "Our cozy restaurant offers wood fired food with the unique flavors of Florida pines, our pizza is made with","img/pic/temp/slider.jpg","")
+  .swiper-pagination

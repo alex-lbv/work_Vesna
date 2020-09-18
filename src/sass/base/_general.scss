@@ -1,0 +1,58 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: SourceSans, sans-serif;
+  color: #010101;
+  overflow-x: hidden;
+}
+
+a {
+  color: #010101;
+  transition: color .3s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
+input {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,21 @@
+include ../components/count
+
+mixin card-checkout(link, img, name)
+  li.card-checkout
+    div.card-checkout__wrap
+      .card-checkout__image
+        a(href=link)
+          img(src=img alt="")
+      div.card-checkout__description
+        a(href=link).card-checkout__name Имя товара
+        span.card-checkout__brand Бренд
+        span.card-checkout__weight 200г
+    div.card-checkout__wrap
+      span.card-checkout__title Количество
+      +count("card-checkout__count")
+    div.card-checkout__wrap
+      span.card-checkout__title Скидка
+      span.card-checkout__sale 10%
+    div.card-checkout__wrap
+      span.card-checkout__title Цена
+      span.card-checkout__price 2000Р

@@ -1,0 +1,127 @@
+.cat-banner {
+  &__title {
+    position: absolute;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #fff;
+
+    @media screen and(max-width: 991px) {
+      font-size: 22px;
+    }
+
+    @media screen and(min-width: 992px) {
+      font-size: 36px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media screen and(max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      @media screen and(min-width: 992px) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+
+    @media screen and(max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    transition: opacity .3s ease;
+
+    @media screen and(max-width: 991px) {
+      position: relative;
+      display: flex;
+      max-width: 320px;
+      width: 100%;
+      height: 320px;
+      margin: auto auto 20px auto;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &--lg {
+      .cat-banner__title {
+
+        @media screen and(max-width: 991px) {
+          bottom: 20px;
+          right: 20px;
+          max-width: 215px;
+        }
+
+        @media screen and(min-width: 992px) {
+          bottom: 20px;
+          right: 30px;
+          max-width: 345px;
+        }
+      }
+    }
+
+    &--md {
+      @media screen and(min-width: 992px) {
+        margin-bottom: 17px;
+      }
+
+      .cat-banner__title {
+        @media screen and(max-width: 991px) {
+          top: 20px;
+          right: 20px;
+        }
+
+        @media screen and(min-width: 992px) {
+          top: 33px;
+          left: 32px;
+        }
+      }
+    }
+
+    &--sm {
+      &:first-of-type {
+        @media screen and(min-width: 992px) {
+          margin-right: 20px;
+        }
+
+        .cat-banner__title {
+          left: 20px;
+          bottom: 26px;
+        }
+      }
+
+      &:last-of-type {
+        .cat-banner__title {
+          @media screen and(max-width: 991px) {
+            transform: translate(230px, 70px) rotate(-90deg);
+          }
+
+          @media screen and(min-width: 992px) {
+            transform: translate(155px, 70px) rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+mixin nav(nav_link, nav_link_class, nav_name)
+  li.navigation__item
+    a(class=nav_link_class, href=nav_link)&attributes(attributes)=nav_name
+
+
+.navigation
+  .container
+    ul.navigation__list
+      +nav("#","navigation__link active","лицо")
+      +nav("#","navigation__link","тело")
+      +nav("#","navigation__link","волосы")
+      +nav("#","navigation__link","мужчинам")
+      +nav("#","navigation__link","детям")
+      +nav("#","navigation__link","аксессуары")
+      +nav("#","navigation__link","бренды")
+      +nav("#","navigation__link","акции")

@@ -1,0 +1,55 @@
+.subscribe {
+  background-color: rgba(127, 154, 196, .15);
+
+  .container {
+    display: flex;
+
+    @media screen and(max-width: 991px) {
+      padding: 30px 20px 25px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @media screen and(min-width: 992px) {
+      padding: 45px 25px 40px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 327px;
+    padding: 20px 7px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #586045;
+
+    @media screen and(max-width: 991px) {
+      margin: 20px auto 20px auto;
+    }
+
+    &::placeholder {
+      color: #010101;
+    }
+  }
+
+  .btn {
+    @media screen and(max-width: 991px) {
+      margin: auto;
+    }
+  }
+}

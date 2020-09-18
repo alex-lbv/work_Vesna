@@ -1,0 +1,58 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.checkout
+    block content
+    include ../modules/header
+    include ../components/card-checkout
+    main
+      .mask
+      .container
+        .checkout__container
+          h1.title Корзина
+
+          ul.checkout__title-sections
+            li
+              span Товар
+            li
+              span Количество
+            li
+              span Скидка
+            li
+              span Цена
+
+          ul.checkout__section
+            +card-checkout("#", "img/pic/temp/card_1.png", "cc1", "cc1")
+            +card-checkout("#", "img/pic/temp/card_2.png", "cc2", "cc2")
+
+          .checkout__promo
+            div.checkout__promo-wrap
+              div.checkout__promo-container
+                span.checkout__promo-title Промокод
+                div
+                  input(class="checkout__promo-code" type="text" placeholder="Ввести промокод")
+                  button.checkout__promo-btn Активировать
+              div.checkout__promo-container
+                div
+                  span.checkout__promo-title Итого:
+                  span.checkout__total 2000Р
+                button.btn Повторить заказ
+        span.checkout__title Ваш заказ успешно оформлен!
+        p.checkout__text
+          | Благодарим за покупку. В ближайшее время с Вами свяжется менеджер для подтверждения заказа.<br>
+          | Статус заказа Вы можете отследить, пройдя по <a class="checkout__link" href="#">ссылке</a>.
+
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+

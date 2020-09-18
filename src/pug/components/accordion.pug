@@ -1,0 +1,28 @@
+mixin accordion(id, title, collapsed)
+  div(class="accordion")
+    .accordion__header(class=collapsed data-toggle="collapse" data-target=`#${id}`)
+      p=title
+
+    div(id=id class="accordion__content collapse" class=show)
+      ul.catalog__filter-list
+        li
+          input(class="visually-hidden" type="checkbox" id="fc1" name="cat" checked="")
+          label(for="fc1") Гели
+        li
+          input(class="visually-hidden" type="checkbox" id="fc2" name="cat")
+          label(for="fc2") Кремы
+        li
+          input(class="visually-hidden" type="checkbox" id="fc3" name="cat")
+          label(for="fc3") Лосьоны
+        li
+          input(class="visually-hidden" type="checkbox" id="fc4" name="cat")
+          label(for="fc4") Маски
+        li
+          input(class="visually-hidden" type="checkbox" id="fc5" name="cat")
+          label(for="fc5") Ночные маски
+
+      span(class="btn-see-all") Развернуть
+
+
+
+

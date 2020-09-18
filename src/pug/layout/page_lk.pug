@@ -1,0 +1,205 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.lk
+    block content
+    include ../modules/header
+    include ../components/card
+    main
+      .mask
+      .container
+        .lk__container
+          h1.title Личный кабинет
+          .lk__tabs
+            ul.nav.nav-tabs
+              li.active
+                a(class="active" href="#tab-profile" data-toggle="tab") Профиль
+              li
+                a(href="#tab-history" data-toggle="tab") История заказов
+              li
+                a(href="#tab-favorite" data-toggle="tab") Избранное
+            .tab-content
+              div(class="tab-pane active" id="tab-profile")
+                .lk__profile
+                  .lk__profile-container
+                    div.lk__profile-wrap
+                      div.lk__profile-image
+                      button.btn Изменить данные
+                    div.lk__profile-wrap
+                      span.lk__profile-name.lk__profile-title Весна Цветочкина
+                      span.lk__profile-date 1.01.1990
+                      span.lk__profile-email vesna.vesna@mail.com
+                      span.lk__profile-phone +1 234 567 8990
+                      .lk__profile-sale
+                        span 15%
+                        span персональная скидка
+                  .lk__profile-container.lk__profile-address
+                    span.lk__profile-title Список адресов
+                    ol.lk__profile-address-list
+                      li.lk__profile-address-item
+                        div
+                          div
+                            span Дом
+                            span Тот Город, Такая-то улица, 5 дом, квартира 7
+                          span.lk__profile-edit Изменить
+                      li.lk__profile-address-item
+                        div
+                          div
+                            span Работа
+                            span Тот Город, Такая-то улица, 5 дом, квартира 7
+                          span.lk__profile-edit Изменить
+                    button.btn Добавить адрес
+
+              div(class="tab-pane" id="tab-history")
+                .lk__history
+                  div(class="accordion")
+                    .accordion__item
+                      div(class="lk__history-header")
+                        span(class="lk__history-title" data-toggle="collapse" data-target="#collapseOne") Заказ 123456
+                        span.lk__history-date 12.08.2020
+                        span.lk__history-status Выполнен
+                        span.lk__history-total 5670Р
+                        button.btn Повторить заказ
+
+                      div(id="collapseOne" class="lk__history-footer collapse show")
+                        .lk__history-footer
+                          ul.lk__history-list
+                            li
+                              a(class="lk__history-image" href="#")
+                                img(src="img/pic/temp/card_1.png" alt="")
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+                            li
+                              a(class="lk__history-image" href="#")
+                                img(src="img/pic/temp/card_2.png" alt="")
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+
+                    .accordion__item
+                      div(class="lk__history-header")
+                        span(class="lk__history-title collapsed" data-toggle="collapse" data-target="#collapseTwo") Заказ 123456
+                        span.lk__history-date 12.08.2020
+                        span.lk__history-status Выполнен
+                        span.lk__history-total 5670Р
+                        button.btn Повторить заказ
+
+                      div(id="collapseTwo" class="lk__history-footer collapse")
+                        .lk__history-footer
+                          ul.lk__history-list
+                            li
+                              a(class="lk__history-image" href="#")
+                                img(src="img/pic/temp/card_1.png" alt="")
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+                            li
+                              a(class="lk__history-image" href="#")
+                                img
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+
+                    .accordion__item
+                      div(class="lk__history-header")
+                        span(class="lk__history-title collapsed" data-toggle="collapse" data-target="#collapseThree") Заказ 123456
+                        span.lk__history-date 12.08.2020
+                        span.lk__history-status Выполнен
+                        span.lk__history-total 5670Р
+                        button.btn Повторить заказ
+
+                      div(id="collapseThree" class="lk__history-footer collapse")
+                        .lk__history-footer
+                          ul.lk__history-list
+                            li
+                              a(class="lk__history-image" href="#")
+                                img(src="img/pic/temp/card_1.png" alt="")
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+                            li
+                              a(class="lk__history-image" href="#")
+                                img
+                              div.lk__history-container
+                                a(class="lk__history-name" href="#") Имя товара
+                                span.lk__history-brand Бренд
+                                span.lk__history-weight 200г
+                              span.lk__history-quantity 2 шт.
+                              span.lk__history-sale Скидка 10%
+                              span.lk__history-price 2000Р
+
+
+              div(class="tab-pane" id="tab-favorite")
+                .lk__swiper.lk__swiper--1
+                  ul.swiper-wrapper
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+
+                .lk__swiper.lk__swiper--2
+                  ul.swiper-wrapper
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+                    li.swiper-slide
+                      +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+

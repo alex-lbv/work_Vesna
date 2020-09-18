@@ -1,0 +1,37 @@
+mixin link_list(title, link, ...items)
+  .footer__list
+    span.footer__title=title
+    ul
+      each item in items
+        li
+        a(href=link)= item
+
+mixin social_list(src, soc_link, width, height,alt)
+    li
+      a(href=soc_link)
+        img(src=src,width=width,height=height,alt=alt)
+
+footer.footer
+  .container
+    div.footer__top-content
+      +link_list("Каталог","#", "Для лица", "Для тела", "Для волос", "Мужчинам", "Детям","Аксессуары","Бренды")
+      +link_list("Магазин","#", "Доставка и оплата", "Способы оплаты", "Гарантия качества", "Возврат", "Наш блог","Контакты")
+      +link_list("О нас","#", "Работа в компании", "Юридическая информация", "Политика конфиденциальности", "Пользовательское соглашение", "Положение о сертификатах")
+
+      .footer__info
+        span.footer__title Свяжитесь с нами
+        a(href="tel:12345678900") +1 (234) 567 8900
+        a(href="mailto:info@vesna.com") info@vesna.com
+        span Режим работы:
+        span ежедневно с 9.00 до 21.00
+        span прием заказов круглосуточно
+
+        ul.footer__social-list
+          +social_list("img/pic/ico/inst_ico.png","#","27","27","instagram")
+          +social_list("img/pic/ico/fb_ico.png","#","27","27","facebook")
+          +social_list("img/pic/ico/twit_ico.png","#","27","27","twitter")
+          +social_list("img/pic/ico/whatsapp_ico.png","#","27","27","whatsapp")
+
+
+
+    p.footer__bottom-text All rights reserved

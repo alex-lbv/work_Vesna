@@ -1,0 +1,24 @@
+mixin banner(url, src, width, height, alt, title, text)
+  a(href=url)
+    img(src=src, width= width, height=height, alt=alt)
+    .promotions__container
+      p.promotions__title= title
+      if (text)
+        p.promotions__description=text
+      else
+
+
+.promotions
+  .container
+    p.title Акции
+    .promotions__swiper
+      ul.promotions__list.swiper-wrapper
+        li.swiper-slide
+          +banner("#","img/pic/bg/prom_1.jpg","580", "420","питательный уход для лица","Скидка 10%", "питательный уход для лица")
+        li.swiper-slide
+          +banner("#","img/pic/bg/prom_2.jpg","580", "420","флюид для лица", "флюид для лица в подарок!")
+        li.swiper-slide
+          +banner("#","img/pic/bg/prom_2.jpg","580", "420","флюид для лица", "флюид для лица в подарок!")
+        li.swiper-slide
+          +banner("#","img/pic/bg/prom_2.jpg","580", "420","флюид для лица", "флюид для лица в подарок!")
+

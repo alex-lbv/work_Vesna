@@ -1,0 +1,28 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body
+    block content
+    include ../modules/header
+    main
+      .mask
+      include ../modules/main-banner
+      include ../modules/navigation
+      include ../modules/cat-banner
+      include ../modules/main-tabs
+      include ../modules/promotions
+      include ../modules/sales
+      include ../modules/main-blog
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+

@@ -1,0 +1,5 @@
+mixin blog(href, src, width, height, alt, date, name)
+  a(class="card-blog", href=href)
+    img(class="card-blog__image", src=src, width=width, height=height, alt=alt)
+    p.card-blog__date= date
+    p.card-blog__name= name

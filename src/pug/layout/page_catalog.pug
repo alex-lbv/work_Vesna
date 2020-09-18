@@ -1,0 +1,70 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.catalog
+    block content
+    include ../modules/header
+    include ../components/card
+    main
+      .mask
+      include ../modules/main-banner
+      include ../modules/navigation
+      .container
+        .catalog__container
+          include ../components/breadcrumbs
+          include ../components/accordion
+
+          h1.title Кремы для увлажнения
+          .catalog__section
+            button(class="catalog__btn catalog__btn--filter" data-toggle="modal" data-target="#filter") Фильтр
+            .catalog__filter.catalog__filter--desk
+              +accordion("f1", "Категории", "collapsed")
+              +accordion("f2", "Бренд", "collapsed")
+              +accordion("f3", "Средство", "collapsed")
+              +accordion("f4", "Особенности", "collapsed")
+              .catalog__btn-wrap
+                button.btn Применить
+                button.catalog__btn Сбросить
+
+            .catalog__content
+              .catalog__sort
+                span.catalog__sort-title Сортировать по:
+                ul.catalog__sort-list
+                  li имени
+                  li.active цене
+                  li рейтингу
+                  li обновлению
+                .catalog__sort-arrows
+                  span.active
+                  span
+              ul.catalog__list.grid
+                li
+                  +card("#","img/pic/temp/card_1.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                li
+                  +card("#","img/pic/temp/card_2.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р")
+                li
+                  +card("#","img/pic/temp/card_3.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--new")
+                li
+                  +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                li
+                  +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+                li
+                  +card("#","img/pic/temp/card_4.png","145","220","Сыворотка для лица","Сыворотка для лица","Brand name","1200 Р","card--sale")
+
+              button(class="catalog__btn" type="button") Показать еще
+
+              include ../components/pagination
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+
