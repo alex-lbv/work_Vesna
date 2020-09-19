@@ -148,7 +148,7 @@
       max-width: 279px;
       text-align: center;
       font-size: 21px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 23px;
       color: #ee8347;
       border: 2px solid #ee8347;
@@ -197,6 +197,7 @@
         flex-direction: column;
 
         .btn {
+          font-size: 21px;
           width: 279px;
         }
 

@@ -56,6 +56,10 @@
       display: block;
       margin: 0 auto 33px auto;
       width: 279px;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 23px;
+      padding: 15px;
     }
   }
 
@@ -120,6 +124,10 @@
         }
 
         &.collapsed {
+          &::after {
+            background-color: #000;
+          }
+
           &::before {
             position: absolute;
             transform: rotate(90deg);
@@ -130,7 +138,7 @@
             content: "";
             width: 16px;
             height: 2px;
-            background-color: #ee8347;
+            background-color: #000;
           }
         }
       }

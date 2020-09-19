@@ -23,6 +23,22 @@
     }
   }
 
+  &--main {
+    .navigation__list {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        justify-content: space-around;
+      }
+
+      li {
+        &:not(:last-of-type) {
+          @media screen and(min-width: 992px) and (max-width: 1199px) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
   &__link {
     @media screen and(min-width: 992px) {
       text-transform: uppercase;

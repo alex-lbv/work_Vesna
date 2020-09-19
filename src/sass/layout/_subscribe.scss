@@ -42,6 +42,11 @@
       margin: 20px auto 20px auto;
     }
 
+    @media screen and(min-width: 992px) and (max-width: 1199px) {
+      width: 220px;
+      margin-right: 40px;
+    }
+
     &::placeholder {
       color: #010101;
     }

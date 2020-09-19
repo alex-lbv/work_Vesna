@@ -3,7 +3,7 @@ mixin nav(nav_link, nav_link_class, nav_name)
     a(class=nav_link_class, href=nav_link)&attributes(attributes)=nav_name
 
 
-.navigation
+.navigation.navigation--main
   .container
     ul.navigation__list
       +nav("#","navigation__link active","лицо")
