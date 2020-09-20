@@ -48,6 +48,10 @@
       }
 
       @media screen and(min-width: 992px) {
+        height: 335px;
+      }
+
+      @media screen and(min-width: 1200px) {
         width: 100%;
         height: 420px;
         padding: 25px;
@@ -66,7 +70,7 @@
       left: 0;
       right: 0;
 
-      @media screen and(max-width: 991px) {
+      @media screen and(max-width: 1199px) {
         width: 100%;
         height: auto;
       }

@@ -159,6 +159,13 @@
       width: 100%;
     }
 
+    @media screen and (max-width: 574px) {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+    }
+
     &:first-of-type {
       @media screen and(min-width: 576px) {
         width: 50%;

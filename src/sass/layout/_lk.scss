@@ -339,7 +339,12 @@
         width: 50%;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        margin-right: 50px;
+        font-size: 21px;
+      }
+
+      @media screen and(min-width: 1199px) {
         margin-right: 40px;
         font-size: 21px;
       }
@@ -383,7 +388,11 @@
         text-align: end;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        margin: auto 50px auto auto;
+      }
+
+      @media screen and(min-width: 1199px) {
         margin: auto 135px auto auto;
       }
     }
@@ -391,10 +400,14 @@
     .btn {
       width: 279px;
 
-      @media screen and(max-width: 991px) {
+      @media screen and (max-width: 991px) {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        width: 220px;
       }
     }
 
@@ -406,7 +419,12 @@
         margin-bottom: 30px;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        width: 70%;
+        margin-bottom: 50px;
+      }
+
+      @media screen and(min-width: 1199px) {
         width: 62%;
         margin-bottom: 50px;
       }
@@ -418,7 +436,12 @@
           flex-wrap: wrap;
         }
 
-        @media screen and(min-width: 992px) {
+        @media screen and(min-width: 992px) and (max-width: 1199px) {
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        @media screen and(min-width: 1199px) {
           align-items: center;
         }
 
@@ -444,7 +467,12 @@
         height: 119px;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+        width: 118px;
+        height: 119px;
+      }
+
+      @media screen and(min-width: 1199px) {
         margin-right: 56px;
         width: 118px;
         height: 119px;
@@ -467,7 +495,11 @@
       display: flex;
       flex-direction: column;
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 992px) and (max-width: 1199px) {
+
+      }
+
+      @media screen and(min-width: 1199px) {
         margin-right: 100px;
       }
     }
@@ -520,7 +552,7 @@
         width: 100%;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 1199px) {
         margin-right: 70px;
       }
     }
@@ -535,7 +567,7 @@
         width: 50%;
       }
 
-      @media screen and(min-width: 992px) {
+      @media screen and(min-width: 1199px) {
         margin: auto 75px auto auto;
       }
     }

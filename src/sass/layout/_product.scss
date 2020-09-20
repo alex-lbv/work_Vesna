@@ -85,6 +85,10 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 21px;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__brand {
@@ -93,6 +97,10 @@
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.4px;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__article {
@@ -101,6 +109,10 @@
     font-weight: 400;
     line-height: 21px;
     color: #656466;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__size {
@@ -109,6 +121,10 @@
     font-weight: 400;
     line-height: 21px;
     color: #656466;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__price {
@@ -117,6 +133,10 @@
     font-weight: 600;
     line-height: 28px;
     color: #7f9ac4;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__stock {
@@ -126,6 +146,10 @@
     line-height: 21px;
     letter-spacing: 0.4px;
     color: #656466;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
   }
 
   &__count {
@@ -133,6 +157,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 37px;
+
+      @media screen and (max-width: 991px) {
+        justify-content: center;
+      }
 
       span {
         padding-top: 13px;
@@ -149,6 +177,7 @@
 
     @media screen and (max-width: 991px) {
       margin-bottom: 30px;
+      justify-content: center;
     }
 
     @media screen and (min-width: 992px) {

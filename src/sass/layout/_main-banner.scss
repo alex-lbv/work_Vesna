@@ -8,7 +8,8 @@
 
   .swiper-slide {
     position: relative;
-    background-color: #f1e2d1;
+    background-color: rgb(237, 214, 207);
+    overflow: hidden;
 
     @media screen and(max-width: 991px) {
       min-height: 400px;
@@ -59,11 +60,18 @@
 
   &__title {
     margin-bottom: 25px;
-    font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.9px;
     line-height: 38px;
     color: #ee8347;
+
+    @media screen and(max-width: 991px) {
+      font-size: 25px;
+    }
+
+    @media screen and(min-width: 992px) {
+      font-size: 36px;
+    }
 
     span {
       &:first-of-type {
@@ -93,8 +101,16 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
-    height: auto;
+
+    @media screen  and (max-width: 991px){
+      width: auto;
+      height: 100%;
+    }
+
+    @media screen  and (min-width: 992px){
+      width: 100%;
+      height: auto;
+    }
   }
 
   .btn {

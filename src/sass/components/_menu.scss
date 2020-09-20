@@ -76,7 +76,7 @@
     left: inherit;
     right: inherit;
     cursor: pointer;
-    z-index: 12;
+    z-index: 21;
     padding: 10px 7px;
     width: 46px;
     height: 40px;
@@ -121,10 +121,11 @@
 
   .show-sidebar .sidebar {
     transform: translate3d(0, 0, 0);
+    z-index: 20;
   }
 
   .show-sidebar .mask {
-    z-index: 1;
+    z-index: 19;
     opacity: 1;
     pointer-events: auto;
   }
