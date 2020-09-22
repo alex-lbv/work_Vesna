@@ -1,0 +1,138 @@
+.blog-list {
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 77px;
+  }
+
+  &__item {
+    display: flex;
+
+    @media screen and (max-width:991px) {
+      flex-direction: column;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__image {
+    @media screen and (max-width:991px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width:992px) {
+      min-width: 500px;
+      margin-right: 55px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    max-width: 320px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+  }
+
+  &__header {
+    margin-bottom: 80px;
+    display: flex;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+
+    li {
+      position: relative;
+      padding: 0 10px;
+
+      &:not(:last-of-type) {
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 100%;
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  &__like {
+    span {
+      margin-left: 55px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/pic/ico/heart_ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 17px;
+        height: 13px;
+        top: 0;
+        bottom: 0;
+        left: -20px;
+        margin: auto;
+      }
+    }
+
+    &--active {
+      span {
+        &:after {
+          background-image: url("../img/pic/ico/heart-orange-full_ico.png");
+        }
+      }
+    }
+  }
+
+  &__views {
+    span {
+      margin-left: 35px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/pic/ico/view_ico.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 18px;
+        height: 11px;
+        top: 0;
+        bottom: 0;
+        left: -25px;
+        margin: auto;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 20px;
+
+    .btn {
+      width: 253px;
+    }
+  }
+}

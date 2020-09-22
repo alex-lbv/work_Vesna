@@ -1,0 +1,15 @@
+mixin blog-list__item(img,title, description, date, likes, views, active)
+  li.blog-list__item
+    a(href="#" class="blog-list__image")
+      img(src=img alt="")
+    .blog-list__content
+      ul.blog-list__header
+        li.blog-list__date
+          span= date
+        li(class="blog-list__like" class=active)
+          span=likes
+        li.blog-list__views
+          span=views
+      h2.blog-list__title=title
+      p.blog-list__description=description
+      a(href="#" class="btn") Читать далее

@@ -1,0 +1,31 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.blog-list
+    block content
+    include ../modules/header
+    include ../modules/main-banner
+    include ../components/blog-list__item
+    main
+      .mask
+      .container
+        .blog-list__container
+          ul.blog-list__items
+            +blog-list__item("img/pic/temp/blog-list__item.png", "Lorem ipsum dolor sit amet", "Мы хотим делать этот мир красивее, ярче и лучше. Для нас это не просто слова – мы в это действительно верим и считаем, что если счастлива Женщина – счастлив весь мир. Наша команда с любовью каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться и радовать окружающих своим прекрасным настроением.", "16 July 2020", "123", "123", "blog-list__like--active")
+            +blog-list__item("img/pic/temp/blog-list__item.png", "Lorem ipsum dolor sit amet", "Мы хотим делать этот мир красивее, ярче и лучше. Для нас это не просто слова – мы в это действительно верим и считаем, что если счастлива Женщина – счастлив весь мир. Наша команда с любовью каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться и радовать окружающих своим прекрасным настроением.", "16 July 2020", "123", "123")
+            +blog-list__item("img/pic/temp/blog-list__item.png", "Lorem ipsum dolor sit amet", "Мы хотим делать этот мир красивее, ярче и лучше. Для нас это не просто слова – мы в это действительно верим и считаем, что если счастлива Женщина – счастлив весь мир. Наша команда с любовью каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться и радовать окружающих своим прекрасным настроением.", "16 July 2020", "123", "123")
+
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+
