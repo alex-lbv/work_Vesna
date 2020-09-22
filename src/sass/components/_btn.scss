@@ -1,7 +1,7 @@
 .btn {
   padding: 16px;
   width: 100%;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 23px;
   background-color: #f1c756;
@@ -22,10 +22,5 @@
 
   &--lg {
     max-width: 280px;
-  }
-
-  &--big {
-    font-size: 21px;
-    font-weight: 600;
   }
 }

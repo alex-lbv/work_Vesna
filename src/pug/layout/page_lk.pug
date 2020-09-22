@@ -22,35 +22,78 @@ html(lang="ru")
                 a(href="#tab-favorite" data-toggle="tab") Избранное
             .tab-content
               div(class="tab-pane active" id="tab-profile")
+                //.lk__profile
+                //  .lk__profile-container
+                //    div.lk__profile-wrap
+                //      div.lk__profile-image
+                //      button.btn Изменить данные
+                //    div.lk__profile-wrap
+                //      span.lk__profile-name.lk__profile-title Весна Цветочкина
+                //      span.lk__profile-date 1.01.1990
+                //      span.lk__profile-email vesna.vesna@mail.com
+                //      span.lk__profile-phone +1 234 567 8990
+                //      .lk__profile-sale
+                //        span 15%
+                //        span персональная скидка
+                //  .lk__profile-container.lk__profile-address
+                //    span.lk__profile-title Список адресов
+                //    ol.lk__profile-address-list
+                //      li.lk__profile-address-item
+                //        div
+                //          div
+                //            span Дом
+                //            span Тот Город, Такая-то улица, 5 дом, квартира 7
+                //          span.lk__profile-edit Изменить
+                //      li.lk__profile-address-item
+                //        div
+                //          div
+                //            span Работа
+                //            span Тот Город, Такая-то улица, 5 дом, квартира 7
+                //          span.lk__profile-edit Изменить
+                //    button.btn Добавить адрес
+
                 .lk__profile
-                  .lk__profile-container
-                    div.lk__profile-wrap
-                      div.lk__profile-image
-                      button.btn Изменить данные
-                    div.lk__profile-wrap
-                      span.lk__profile-name.lk__profile-title Весна Цветочкина
-                      span.lk__profile-date 1.01.1990
-                      span.lk__profile-email vesna.vesna@mail.com
-                      span.lk__profile-phone +1 234 567 8990
-                      .lk__profile-sale
-                        span 15%
-                        span персональная скидка
-                  .lk__profile-container.lk__profile-address
+                  .lk__profile-section.lk__profile-section--info
+                    span.lk__profile-title Персональная информация
+                    div.lk__profile-container
+                      .lk__profile-image
+                      div.lk__profile-wrap
+                        div.lk__profile-name
+                          span Имя:
+                          span Весна Цветочкина
+                        div.lk__profile-date
+                          span Дата рождения:
+                          span 1.01.1990
+                        div.lk__profile-email
+                          span E-mail:
+                          span vesna.vesna@mail.com
+                        div.lk__profile-phone
+                          span Телефон:
+                          span +1 234 567 8990
+                      div.lk__profile-btn-wrap
+                        button.btn Изменить данные
+                        button.btn Сменить пароль
+
+                  .lk__profile-section.lk__profile-section--address
                     span.lk__profile-title Список адресов
                     ol.lk__profile-address-list
                       li.lk__profile-address-item
-                        div
-                          div
-                            span Дом
-                            span Тот Город, Такая-то улица, 5 дом, квартира 7
-                          span.lk__profile-edit Изменить
+                        span 1. Дом
+                        span Страна, индекс
+                        span
+                          | Тот Город, Такая-то улица, <br>
+                          | 5 дом, квартира 7
+                        span.lk__profile-address-edit Изменить
+
                       li.lk__profile-address-item
-                        div
-                          div
-                            span Работа
-                            span Тот Город, Такая-то улица, 5 дом, квартира 7
-                          span.lk__profile-edit Изменить
-                    button.btn Добавить адрес
+                        span 2. Работа
+                        span Страна, индекс
+                        span
+                          | Тот Город, Такая-то улица, <br>
+                          | 5 дом, квартира 7
+                        span.lk__profile-address-edit Изменить
+
+                      li.lk__profile-address-item.lk__profile-address-item--adds
 
               div(class="tab-pane" id="tab-history")
                 .lk__history

@@ -69,18 +69,256 @@
     }
   }
 
-  &__profile {
-    display: flex;
+  //&__profile {
+  //  display: flex;
+  //
+  //  @media screen and(max-width: 991px) {
+  //    flex-direction: column;
+  //  }
+  //
+  //  .btn {
+  //    width: 279px;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      margin: auto auto 30px auto;
+  //    }
+  //  }
+  //
+  //  &-image {
+  //    position: relative;
+  //    width: 100%;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      height: 200px;
+  //      max-width: 200px;
+  //      margin: auto auto 20px auto;
+  //    }
+  //
+  //    @media screen and(min-width: 992px) {
+  //      height: 281px;
+  //      margin-bottom: 34px;
+  //    }
+  //
+  //    background-color: #dfdddd;
+  //
+  //    &::after {
+  //      position: absolute;
+  //      content: 'Изменить фото';
+  //      bottom: 0;
+  //      display: block;
+  //      padding: 26px 15px 20px;
+  //      width: 100%;
+  //      text-align: center;
+  //      font-size: 16px;
+  //      font-weight: 400;
+  //      letter-spacing: 0.4px;
+  //      color: #656466;
+  //      background-color: rgb(195, 191, 191);
+  //      cursor: pointer;
+  //    }
+  //  }
+  //
+  //  &-container {
+  //    display: flex;
+  //
+  //    @media screen and(min-width: 992px) {
+  //      width: 50%;
+  //    }
+  //
+  //    &:first-of-type {
+  //      @media screen and(max-width: 991px) {
+  //        flex-direction: column;
+  //        margin-bottom: 30px;
+  //
+  //      }
+  //    }
+  //
+  //    &:nth-child(2) {
+  //      display: flex;
+  //      flex-direction: column;
+  //
+  //      .lk__profile-title {
+  //        margin-bottom: 19px;
+  //      }
+  //    }
+  //  }
+  //
+  //  &-wrap {
+  //    display: flex;
+  //    flex-direction: column;
+  //
+  //    @media screen and(min-width: 992px) {
+  //      width: 50%;
+  //    }
+  //
+  //    &:first-of-type {
+  //      @media screen and(min-width: 992px) {
+  //        margin-right: 25px;
+  //      }
+  //    }
+  //  }
+  //
+  //  &-title {
+  //    font-weight: 700;
+  //    letter-spacing: 0.45px;
+  //    line-height: 30px;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      font-size: 23px;
+  //    }
+  //
+  //    @media screen and(min-width: 992px) {
+  //      font-size: 18px;
+  //    }
+  //  }
+  //
+  //  &-name {
+  //    margin-bottom: 19px;
+  //  }
+  //
+  //  &-date {
+  //    margin-bottom: 24px;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      font-size: 20px;
+  //    }
+  //  }
+  //
+  //  &-email {
+  //    margin-bottom: 21px;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      font-size: 20px;
+  //    }
+  //  }
+  //
+  //  &-phone {
+  //    @media screen and(max-width: 991px) {
+  //      margin-bottom: 30px;
+  //    }
+  //
+  //    @media screen and(min-width: 992px) {
+  //      margin-bottom: 50px;
+  //    }
+  //  }
+  //
+  //  &-sale {
+  //    display: flex;
+  //
+  //    @media screen and(max-width: 991px) {
+  //      align-items: center;
+  //    }
+  //
+  //    @media screen and(min-width: 992px) {
+  //      flex-direction: column;
+  //    }
+  //
+  //    span {
+  //      &:first-of-type {
+  //        font-size: 24px;
+  //        font-weight: 700;
+  //        letter-spacing: 0.6px;
+  //        line-height: 30px;
+  //        color: #7f9ac4;
+  //
+  //        @media screen and(max-width: 991px) {
+  //          margin-right: 10px;
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  &-address {
+  //    &-list {
+  //      list-style: decimal;
+  //      padding-left: 15px;
+  //
+  //      @media screen and(max-width: 991px) {
+  //        margin-bottom: 50px;
+  //      }
+  //
+  //      @media screen and(min-width: 992px) {
+  //        margin-bottom: 115px;
+  //      }
+  //    }
+  //
+  //    &-item {
+  //      &:not(:last-of-type) {
+  //        margin-bottom: 50px;
+  //      }
+  //
+  //      & > div {
+  //        display: flex;
+  //        justify-content: space-between;
+  //
+  //        div {
+  //          display: flex;
+  //          flex-direction: column;
+  //
+  //          span {
+  //            &:first-of-type {
+  //              margin-bottom: 20px;
+  //            }
+  //
+  //            &:last-of-type {
+  //              margin-left: -15px;
+  //            }
+  //          }
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  &-edit {
+  //    align-self: flex-end;
+  //    cursor: pointer;
+  //    color: #656466;
+  //    transition: color .3s ease;
+  //
+  //    &:hover {
+  //      color: #ee8347;
+  //    }
+  //  }
+  //}
 
-    @media screen and(max-width: 991px) {
-      flex-direction: column;
+  &__profile {
+    padding-bottom: 179px;
+
+    &-title {
+      display: block;
+      margin-bottom: 34px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 21px;
     }
 
-    .btn {
-      width: 279px;
+    &-container {
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-      @media screen and(max-width: 991px) {
-        margin: auto auto 30px auto;
+    &-section {
+      &--info {
+        margin-bottom: 51px;
+
+        .lk__profile-container {
+          display: flex;
+          background-color: rgba(241, 199, 86, .1);
+
+          @media screen and(max-width: 991px) {
+            padding: 40px 15px;
+          }
+
+          @media screen and (min-width: 992px) and (max-width:1199px) {
+            padding: 32px 30px 56px 29px;
+          }
+
+          @media screen and (min-width: 1200px) {
+            padding: 32px 93px 56px 29px;
+          }
+        }
       }
     }
 
@@ -95,8 +333,8 @@
       }
 
       @media screen and(min-width: 992px) {
-        height: 281px;
-        margin-bottom: 34px;
+        width: 254px;
+        height: 254px;
       }
 
       background-color: #dfdddd;
@@ -106,7 +344,7 @@
         content: 'Изменить фото';
         bottom: 0;
         display: block;
-        padding: 26px 15px 20px;
+        padding: 19px 15px;
         width: 100%;
         text-align: center;
         font-size: 16px;
@@ -118,161 +356,184 @@
       }
     }
 
-    &-container {
-      display: flex;
-
-      @media screen and(min-width: 992px) {
-        width: 50%;
-      }
-
-      &:first-of-type {
-        @media screen and(max-width: 991px) {
-          flex-direction: column;
-          margin-bottom: 30px;
-
-        }
-      }
-
-      &:nth-child(2) {
-        display: flex;
-        flex-direction: column;
-
-        .lk__profile-title {
-          margin-bottom: 19px;
-        }
-      }
-    }
-
     &-wrap {
       display: flex;
       flex-direction: column;
-
-      @media screen and(min-width: 992px) {
-        width: 50%;
-      }
-
-      &:first-of-type {
-        @media screen and(min-width: 992px) {
-          margin-right: 25px;
-        }
-      }
+      padding-top: 27px;
     }
 
-    &-title {
-      font-weight: 700;
-      letter-spacing: 0.45px;
-      line-height: 30px;
+    &-name,
+    &-date,
+    &-email,
+    &-phone {
+      display: flex;
+      margin-bottom: 30px;
 
-      @media screen and(max-width: 991px) {
-        font-size: 23px;
-      }
+      span {
+        &:first-of-type {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.45px;
 
-      @media screen and(min-width: 992px) {
-        font-size: 18px;
+          @media screen and (max-width: 991px) {
+            margin-right: 20px;
+            width: 100px;
+          }
+
+          @media screen and (min-width: 992px) {
+            margin-left: 46px;
+            margin-right: 55px;
+            width: 100px;
+          }
+        }
+
+        &:last-of-type {
+          font-size: 16px;
+          font-weight: 400;
+        }
       }
     }
 
     &-name {
-      margin-bottom: 19px;
+      span {
+        &:last-of-type {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0.45px;
+        }
+      }
     }
 
     &-date {
-      margin-bottom: 24px;
+      span {
+        line-height: 30px;
 
-      @media screen and(max-width: 991px) {
-        font-size: 20px;
+        &:last-of-type {
+          align-self: flex-end;
+        }
       }
     }
 
-    &-email {
-      margin-bottom: 21px;
+    &-btn-wrap {
+      @media screen and (max-width: 991px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        max-width: 279px;
+      }
 
-      @media screen and(max-width: 991px) {
-        font-size: 20px;
+      @media screen and (min-width: 992px) and (max-width:1199px) {
+        max-width: 230px;
+        margin: 20px 0 auto auto;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 279px;
+        margin: 28px 0 auto auto;
+      }
+
+      .btn {
+        &:last-of-type {
+          margin-top: 20px;
+          background: transparent;
+          color: #ee8347;
+          border: 2px solid #ee8347;
+
+          &:hover {
+            background-color: #ee8347;
+            color: #fff;
+          }
+        }
       }
     }
 
-    &-phone {
-      @media screen and(max-width: 991px) {
-        margin-bottom: 30px;
-      }
-
-      @media screen and(min-width: 992px) {
-        margin-bottom: 50px;
-      }
-    }
-
-    &-sale {
+    &-address-list {
       display: flex;
+      flex-wrap: wrap;
+    }
 
-      @media screen and(max-width: 991px) {
-        align-items: center;
+    &-address-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 19px;
+      padding: 44px 31px 29px 31px;
+      background-color: rgba(127, 154, 196, .1);
+
+      @media screen and (max-width: 991px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        min-height: 263px;
       }
 
-      @media screen and(min-width: 992px) {
-        flex-direction: column;
+      @media screen and (min-width: 992px) {
+        width: 263px;
+        height: 263px;
+      }
+
+      &:not(:nth-child(4n)) {
+        @media screen and (min-width: 992px) {
+          margin-right: 19px;
+        }
       }
 
       span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+
         &:first-of-type {
-          font-size: 24px;
-          font-weight: 700;
-          letter-spacing: 0.6px;
-          line-height: 30px;
-          color: #7f9ac4;
+          font-weight: 600;
+        }
+      }
 
-          @media screen and(max-width: 991px) {
-            margin-right: 10px;
-          }
+      &--adds {
+        position: relative;
+        cursor: pointer;
+        transition: background-color .3s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 60px;
+          height: 60px;
+          background-image: url("../img/pic/ico/adds_ico.png");
+          background-repeat: no-repeat;
+          background-size: 60px 60px;
+        }
+
+        &::after {
+          content: "Добавить адрес";
+          position: absolute;
+          bottom: 62px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+          font-size: 21px;
+          font-weight: 600;
+          line-height: 23px;
+        }
+
+        &:hover {
+          background-color: rgba(127, 154, 196, .2);
         }
       }
     }
 
-    &-address {
-      &-list {
-        list-style: decimal;
-        padding-left: 15px;
-
-        @media screen and(max-width: 991px) {
-          margin-bottom: 50px;
-        }
-
-        @media screen and(min-width: 992px) {
-          margin-bottom: 115px;
-        }
-      }
-
-      &-item {
-        &:not(:last-of-type) {
-          margin-bottom: 50px;
-        }
-
-        & > div {
-          display: flex;
-          justify-content: space-between;
-
-          div {
-            display: flex;
-            flex-direction: column;
-
-            span {
-              &:first-of-type {
-                margin-bottom: 20px;
-              }
-
-              &:last-of-type {
-                margin-left: -15px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &-edit {
-      align-self: flex-end;
-      cursor: pointer;
+    &-address-edit {
+      margin-top: 45px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.4px;
       color: #656466;
+      cursor: pointer;
       transition: color .3s ease;
 
       &:hover {
