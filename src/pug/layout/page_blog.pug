@@ -1,0 +1,126 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.blog
+    block content
+    include ../modules/header
+    include ../modules/main-banner
+    include ../components/blog-list__item
+    include ../components/social_list
+    main
+      .mask
+      .container
+        .blog__container
+          .blog__content
+            img(class="blog__image" src="img/pic/temp/blog.png" alt="")
+            .blog__header
+              ul.blog__info
+                li.blog__date
+                  span 16 July 2020
+                li(class="blog__like blog__like--active")
+                  span 123
+                li.blog__views
+                  span 123
+              ul.blog__socials
+                +social_list("img/pic/ico/inst-dark_ico.png","#","27","27","instagram")
+                +social_list("img/pic/ico/fb-dark_ico.png","#","27","27","facebook")
+                +social_list("img/pic/ico/twit-dark_ico.png","#","27","27","twitter")
+                +social_list("img/pic/ico/whatsapp-dark_ico.png","#","27","27","whatsapp")
+            h1.blog__title Lorem ipsum dolor sit amet
+            p.blog__text
+              | Мы хотим делать этот мир красивее, ярче и лучше.
+              | Для нас это не просто слова – мы в это действительно верим и считаем,
+              | что если счастлива Женщина – счастлив весь мир. Наша команда с любовью
+              | каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться
+              | и радовать окружающих своим прекрасным настроением.
+            p.blog__text
+              | Мы хотим делать этот мир красивее, ярче и лучше.
+              | Для нас это не просто слова – мы в это действительно верим и считаем,
+              | что если счастлива Женщина – счастлив весь мир. Наша команда с любовью
+              | каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться
+              | и радовать окружающих своим прекрасным настроением.
+            p.blog__text
+              | Мы хотим делать этот мир красивее, ярче и лучше.
+              | Для нас это не просто слова – мы в это действительно верим и считаем,
+              | что если счастлива Женщина – счастлив весь мир. Наша команда с любовью
+              | каждый день делает свое Дело, чтобы Вы с лёгкостью находили поводы улыбаться
+              | и радовать окружающих своим прекрасным настроением.
+            ul.blog__footer
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+
+            .blog__navigation
+              a(href="#") Вернуться в блог
+              .blog__buttons
+                a(href="#" class="blog__buttons-prev") Предыдущая
+                a(href="#" class="blog__buttons-next") Следующая
+
+          aside.blog__sidebar
+            span.blog__sidebar-title Теги
+            ul.blog__sidebar-tags
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+              li
+                a(href="#") # tagyou
+
+            span.blog__sidebar-title  последние новости
+            ul.blog__sidebar-news
+              li
+                a(href="#")
+                  span.blog__sidebar-news-date 16 July 2020
+                  span.blog__sidebar-news-title Lorem ipsum dolor sit amet
+                  p.span.blog__sidebar-news-text You, our treasured clients, have expressed the same disappointment feeling...
+              li
+                a(href="#")
+                  span.blog__sidebar-news-date 16 July 2020
+                  span.blog__sidebar-news-title Lorem ipsum dolor sit amet
+                  p.span.blog__sidebar-news-text You, our treasured clients, have expressed the same disappointment feeling...
+              li
+                a(href="#")
+                  span.blog__sidebar-news-date 16 July 2020
+                  span.blog__sidebar-news-title Lorem ipsum dolor sit amet
+                  p.span.blog__sidebar-news-text You, our treasured clients, have expressed the same disappointment feeling...
+
+
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+

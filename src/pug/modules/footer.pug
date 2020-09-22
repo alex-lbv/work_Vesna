@@ -6,10 +6,7 @@ mixin link_list(title, link, ...items)
         li
         a(href=link)= item
 
-mixin social_list(src, soc_link, width, height,alt)
-    li
-      a(href=soc_link)
-        img(src=src,width=width,height=height,alt=alt)
+include ../components/social_list
 
 footer.footer
   .container
@@ -31,7 +28,5 @@ footer.footer
           +social_list("img/pic/ico/fb_ico.png","#","27","27","facebook")
           +social_list("img/pic/ico/twit_ico.png","#","27","27","twitter")
           +social_list("img/pic/ico/whatsapp_ico.png","#","27","27","whatsapp")
-
-
 
     p.footer__bottom-text All rights reserved
