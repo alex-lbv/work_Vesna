@@ -1,0 +1,104 @@
+block variables
+
+doctype html
+html(lang="ru")
+  include  ../modules/head
+  body.ordering
+    block content
+    include ../modules/header
+    include ../components/card-checkout
+    main
+      .mask
+      .container
+        .ordering__container
+          h1.ordering__title Оформление заказа
+          .ordering__section-wrap
+            .ordering__section
+              .ordering__block.ordering__block--personal-info
+                span.ordering__subtitle Персональная информация
+                input(class="ordering__input" type="text" placeholder="Имя")
+                input(class="ordering__input" type="text" placeholder="Фамилия")
+                input(class="ordering__input" type="email" placeholder="Email")
+                input(class="ordering__input" type="tel" placeholder="Телефон")
+
+              .ordering__block.ordering__block--delivery
+                span.ordering__subtitle Доставка
+                .ordering__input-wrap
+                  input(class="visually-hidden" type="radio" id="delivery" name="shipping_method" checked)
+                  label(for="delivery") Доставка
+                  input(class="visually-hidden" type="radio" id="delivery-2" name="shipping_method")
+                  label(for="delivery-2") Самовывоз
+                input(class="ordering__input" type="text" placeholder="Страна")
+                input(class="ordering__input" type="text" placeholder="Город")
+                input(class="ordering__input" type="email" placeholder="Адрес")
+                input(class="ordering__input" type="tel" placeholder="Почтовый индекс")
+
+              .ordering__block.ordering__block--pay
+                span.ordering__subtitle Оплата
+                .ordering__input-wrap.ordering__input-wrap--column
+                  input(class="visually-hidden" type="radio" id="pay" name="pay_method" checked)
+                  label(for="pay") Онлайн (банковская карта)
+                  input(class="visually-hidden" type="radio" id="pay-2" name="pay_method")
+                  label(for="pay-2") Наличные (самовывоз или курьеру)
+
+            .ordering__section
+              span.ordering__subtitle Ваш заказ
+              .ordering__info
+                ul.ordering__info-list
+                  li.ordering__info-item
+                    .ordering__info-image
+                      img(src="img/pic/temp/card_1.png" alt="")
+                    div.ordering__info-item-wrap
+                      span.ordering__info-name Имя товара
+                      span.ordering__info-brand Бренд
+                    span.ordering__info-value 2 шт.
+                    span.ordering__info-price 2000Р
+                  li.ordering__info-item
+                    .ordering__info-image
+                      img(src="img/pic/temp/card_2.png" alt="")
+                    div.ordering__info-item-wrap
+                      span.ordering__info-name Имя товара
+                      span.ordering__info-brand Бренд
+                    span.ordering__info-value 2 шт.
+                    span.ordering__info-price 2000Р
+                  li.ordering__info-item
+                    .ordering__info-image
+                      img(src="img/pic/temp/card_3.png" alt="")
+                    div.ordering__info-item-wrap
+                      span.ordering__info-name Имя товара
+                      span.ordering__info-brand Бренд
+                    span.ordering__info-value 2 шт.
+                    span.ordering__info-price 2000Р
+                  li.ordering__info-item
+                    .ordering__info-image
+                      img(src="img/pic/temp/card_4.png" alt="")
+                    div.ordering__info-item-wrap
+                      span.ordering__info-name Имя товара
+                      span.ordering__info-brand Бренд
+                    span.ordering__info-value 2 шт.
+                    span.ordering__info-price 2000Р
+                .ordering__info-total
+                  div.ordering__info-items
+                    span Товары  (4 шт)
+                    span 8000Р
+                  div.ordering__info-sales
+                    span Скидка  (10%)
+                    span 450Р
+                  div.ordering__info-total-price
+                    span Итого
+                    span 7550Р
+                .ordering__info-btn-wrap
+                  btn.btn Оформить заказ
+                  a(href="#") Вернуться в корзину
+
+    include ../modules/features
+    include ../modules/subscribe
+    include ../modules/footer
+    include ../modules/modals
+
+    block scripts
+      script(src="js/jquery.js")
+      script(src="js/bootstrap.bundle.js")
+      script(src="js/swiper-bundle.js")
+      script(src="js/scripts.min.js")
+
