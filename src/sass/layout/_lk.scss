@@ -325,6 +325,7 @@
     &-image {
       position: relative;
       width: 100%;
+      background-color: #dfdddd;
 
       @media screen and(max-width: 991px) {
         height: 200px;
@@ -337,9 +338,23 @@
         height: 254px;
       }
 
-      background-color: #dfdddd;
+      //&::after {
+      //  position: absolute;
+      //  content: 'Изменить фото';
+      //  bottom: 0;
+      //  display: block;
+      //  padding: 19px 15px;
+      //  width: 100%;
+      //  text-align: center;
+      //  font-size: 16px;
+      //  font-weight: 400;
+      //  letter-spacing: 0.4px;
+      //  color: #656466;
+      //  background-color: rgb(195, 191, 191);
+      //  cursor: pointer;
+      //}
 
-      &::after {
+      &-btn {
         position: absolute;
         content: 'Изменить фото';
         bottom: 0;
@@ -353,6 +368,10 @@
         color: #656466;
         background-color: rgb(195, 191, 191);
         cursor: pointer;
+      }
+
+      img {
+        max-width: 100%;
       }
     }
 

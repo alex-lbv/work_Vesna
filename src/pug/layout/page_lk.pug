@@ -57,6 +57,9 @@ html(lang="ru")
                     span.lk__profile-title Персональная информация
                     div.lk__profile-container
                       .lk__profile-image
+                        img(src="img/pic/temp/blog-list__item.png" alt="")
+                        input(type="file" class="visually-hidden lk__profile-image-adds")
+                        input(type="button" class="lk__profile-image-btn" id="addfile" value="Изменить фото" onclick="document.querySelector('.lk__profile-image-adds').click()")
                       div.lk__profile-wrap
                         div.lk__profile-name
                           span Имя:

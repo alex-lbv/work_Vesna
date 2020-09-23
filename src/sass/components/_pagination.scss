@@ -22,47 +22,47 @@
         margin-right: 15px;
       }
     }
-
-    &:first-of-type {
-
-      @media screen and(min-width: 992px) {
-        margin-right: 20px;
-      }
-
-      @media screen and(max-width: 991px) {
-        margin-right: 45px;
-      }
-
-      a {
-        display: block;
-        width: 10px;
-        height: 17px;
-        background: url("../img/pic/ico/arrow-left.png") no-repeat;
-      }
-    }
-
-    &:last-of-type {
-
-      @media screen and(min-width: 992px) {
-        margin-left: 20px;
-      }
-
-      @media screen and(max-width: 991px) {
-        margin-left: 45px;
-      }
-
-      a {
-        display: block;
-        background: url("../img/pic/ico/arrow-right.png") no-repeat;
-        width: 10px;
-        height: 17px;
-      }
-    }
   }
 
   .page-item--active {
     a {
       color: #ee8347;
+    }
+  }
+
+  &__prev {
+
+    @media screen and(min-width: 992px) {
+      margin-right: 20px;
+    }
+
+    @media screen and(max-width: 991px) {
+      margin-right: 45px;
+    }
+
+    a {
+      display: block;
+      width: 10px;
+      height: 17px;
+      background: url("../img/pic/ico/arrow-left.png") no-repeat;
+    }
+  }
+
+  &__next {
+
+    @media screen and(min-width: 992px) {
+      margin-left: 20px;
+    }
+
+    @media screen and(max-width: 991px) {
+      margin-left: 45px;
+    }
+
+    a {
+      display: block;
+      background: url("../img/pic/ico/arrow-right.png") no-repeat;
+      width: 10px;
+      height: 17px;
     }
   }
 }
