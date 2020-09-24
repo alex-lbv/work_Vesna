@@ -33,6 +33,21 @@ html(lang="ru")
                 input(class="ordering__input" type="email" placeholder="Адрес")
                 input(class="ordering__input" type="tel" placeholder="Почтовый индекс")
 
+              .ordering__block.ordering__block--delivery
+                span.ordering__subtitle Доставка
+                .ordering__input-wrap
+                  input(class="visually-hidden" type="radio" id="delivery-3" name="shipping_method-2")
+                  label(for="delivery-3") Доставка
+                  input(class="visually-hidden" type="radio" id="delivery-4" name="shipping_method-2" checked)
+                  label(for="delivery-4") Самовывоз
+                select(class="ordering__select")
+                  option(selected="true" disabled) Выберите магазин
+                  option(value="Магазин 1") Магазин 1
+                  option(value="Магазин 2") Магазин 2
+                  option(value="Магазин 3") Магазин 3
+                  option(value="Магазин 4") Магазин 4
+                  option(value="Магазин 5") Магазин 5
+
               .ordering__block.ordering__block--pay
                 span.ordering__subtitle Оплата
                 .ordering__input-wrap.ordering__input-wrap--column

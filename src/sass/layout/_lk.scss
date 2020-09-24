@@ -311,7 +311,7 @@
             padding: 40px 15px;
           }
 
-          @media screen and (min-width: 992px) and (max-width:1199px) {
+          @media screen and (min-width: 992px) and (max-width: 1199px) {
             padding: 32px 30px 56px 29px;
           }
 
@@ -325,7 +325,7 @@
     &-image {
       position: relative;
       width: 100%;
-      background-color: #dfdddd;
+      //background-color: #dfdddd;
 
       @media screen and(max-width: 991px) {
         height: 200px;
@@ -366,12 +366,20 @@
         font-weight: 400;
         letter-spacing: 0.4px;
         color: #656466;
-        background-color: rgb(195, 191, 191);
+        background-color: rgba(195, 191, 191, .6);
         cursor: pointer;
+        transition: background-color .3s ease;
+
+        &:hover {
+          background-color: rgba(195, 191, 191, 1);
+        }
       }
 
       img {
         max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
       }
     }
 
@@ -441,7 +449,7 @@
         max-width: 279px;
       }
 
-      @media screen and (min-width: 992px) and (max-width:1199px) {
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
         max-width: 230px;
         margin: 20px 0 auto auto;
       }
