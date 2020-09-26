@@ -36,7 +36,7 @@
   }
 
   .nav {
-    margin-top: 100px;
+    margin-top: 40px;
   }
 
   .nav-items {
@@ -130,8 +130,14 @@
     pointer-events: auto;
   }
 
-  .show-sidebar .hamburger {
+  .hamburger--close {
     position: fixed;
+    left: 10%;
+    top: 20px;
+  }
+
+  .show-sidebar .hamburger--close {
+    z-index: 25;
   }
 
   .show-sidebar .bar {

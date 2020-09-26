@@ -251,32 +251,37 @@ header.header
       +nav("#","navigation__list-link","блог")
       +nav("#","navigation__list-link","контакты")
 
-    aside.sidebar
-      nav.nav
-        ul.nav-items
-          +nav("#","active nav-title","главная")
-          //+nav("#","nav-title","каталог")
-          li(class="nav__accordion")
-            btn(type="button" class="nav-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true") каталог
-            ul(id="collapseOne" class="collapse")
-              li
-                a(href="#") Лицо
-              li
-                a(href="#") Тело
-              li
-                a(href="#") Волосы
-              li
-                a(href="#") Мужчинами
-              li
-                a(href="#") Детям
-              li
-                a(href="#") Аксессуары
-              li
-                a(href="#") Бренды
-              li
-                a(href="#") Акции
+  aside.sidebar
+    nav.nav
+      .header__menu-btn
+        .hamburger.hamburger--close
+          .bar
+          .bar
+          .bar
+      ul.nav-items
+        +nav("#","active nav-title","главная")
+        //+nav("#","nav-title","каталог")
+        li(class="nav__accordion")
+          span(class="nav-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true") каталог
+          ul(id="collapseOne" class="collapse")
+            li
+              a(href="#") Лицо
+            li
+              a(href="#") Тело
+            li
+              a(href="#") Волосы
+            li
+              a(href="#") Мужчинами
+            li
+              a(href="#") Детям
+            li
+              a(href="#") Аксессуары
+            li
+              a(href="#") Бренды
+            li
+              a(href="#") Акции
 
-          +nav("#","nav-title","доставка и оплата")
-          +nav("#","nav-title","о нас")
-          +nav("#","nav-title","блог")
-          +nav("#","nav-title","контакты")
+        +nav("#","nav-title","доставка и оплата")
+        +nav("#","nav-title","о нас")
+        +nav("#","nav-title","блог")
+        +nav("#","nav-title","контакты")

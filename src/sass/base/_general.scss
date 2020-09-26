@@ -57,3 +57,9 @@ input {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+main {
+  @media screen and (max-width: 991px) {
+    padding-top: 117px;
+  }
+}

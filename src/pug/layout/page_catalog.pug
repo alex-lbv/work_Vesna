@@ -19,14 +19,17 @@ html(lang="ru")
           h1.title Кремы для увлажнения
           .catalog__section
             button(class="catalog__btn catalog__btn--filter" data-toggle="modal" data-target="#filter") Фильтр
-            .catalog__filter.catalog__filter--desk
-              +accordion("f1", "Категории", "collapsed")
-              +accordion("f2", "Бренд", "collapsed")
-              +accordion("f3", "Средство", "collapsed")
-              +accordion("f4", "Особенности", "collapsed")
-              .catalog__btn-wrap
-                button.btn.btn--big Применить
-                button.catalog__btn Сбросить
+            div(class="catalog__filter modal fade", id="filter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+              .modal-dialog
+                .modal-content
+                  .catalog__filter
+                    +accordion("f1", "Категории", "collapsed")
+                    +accordion("f2", "Бренд", "collapsed")
+                    +accordion("f3", "Средство", "collapsed")
+                    +accordion("f4", "Особенности", "collapsed")
+                    .catalog__btn-wrap
+                      button.btn Применить
+                      button.catalog__btn Сбросить
 
             .catalog__content
               .catalog__sort

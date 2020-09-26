@@ -5,16 +5,3 @@ div(class="modal-search modal fade", id="search" tabindex="-1" aria-labelledby="
     .modal-content
       div(class="md-form mt-0")
       input(class="form-control" type="text" placeholder="Поиск" aria-label="Search")
-
-div(class="modal-filter modal fade", id="filter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
-  .modal-dialog
-    .modal-content
-      div(class="md-form mt-0")
-      .catalog__filter
-        +accordion("f1", "Категории", "collapsed")
-        +accordion("f2", "Бренд", "collapsed")
-        +accordion("f3", "Средство", "collapsed")
-        +accordion("f4", "Особенности", "collapsed")
-        .catalog__btn-wrap
-          button.btn Применить
-          button.catalog__btn Сбросить

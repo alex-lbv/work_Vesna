@@ -1,10 +1,31 @@
 .header {
   position: relative;
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 150;
+  //background: #fff;
+  //margin: auto;
 
   @media screen and(max-width: 991px) {
-    margin-bottom: 30px;
-    border-bottom: 1px solid rgba(241, 199, 86, .5);
+    //margin-bottom: 30px;
+    //margin-top: 86px;
+    //border-bottom: 1px solid rgba(241, 199, 86, .5);
   }
+
+  //.container {
+  //  @media screen and(max-width: 991px) {
+  //    position: fixed;
+  //    top: 0;
+  //    left: 0;
+  //    right: 0;
+  //    z-index: 19;
+  //    background: #fff;
+  //    margin: auto;
+  //    //border-bottom: 1px solid rgba(241, 199, 86, .5);
+  //  }
+  //}
 
   &__top,
   &__nav,
@@ -19,8 +40,60 @@
     padding-top: 25px;
     padding-bottom: 15px;
 
-    @media screen and(min-width: 992px) {
+    @media screen and(max-width: 575px) {
+      max-width: calc(100% - 28px);
+    }
+
+    @media screen and(min-width: 576px) {
+      max-width: 512px;
+    }
+
+    @media screen and(min-width: 768px) {
+      max-width: 692px;
+    }
+
+    @media screen and(max-width: 991px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 11;
+      background: #fff;
+      margin: auto;
       border-bottom: 1px solid rgba(241, 199, 86, .5);
+    }
+
+    @media screen and(min-width: 992px) {
+      //border-bottom: 1px solid rgba(241, 199, 86, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      background: #fff;
+      margin: auto;
+      max-width: 930px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      max-width: 1110px;
+    }
+
+    &::after {
+      @media screen and(min-width: 992px) {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        display: block;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 100%;
+        width: 100vw;
+        z-index: -1;
+        background: #fff;
+      }
     }
   }
 
@@ -33,7 +106,9 @@
       padding-top: 35px;
       padding-bottom: 20px;
       margin-bottom: 0;
-      border: none;
+      //border: none;
+      border-top: 1px solid rgba(241, 199, 86, .5);
+      margin-top: 93px;
     }
 
     &-link {
@@ -128,7 +203,7 @@
         color: #010101;
         font-size: 16px;
       }
-      
+
       &:hover {
         color: #ee8347;
       }
