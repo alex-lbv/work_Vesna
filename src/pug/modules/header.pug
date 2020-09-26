@@ -255,7 +255,27 @@ header.header
       nav.nav
         ul.nav-items
           +nav("#","active nav-title","главная")
-          +nav("#","nav-title","каталог")
+          //+nav("#","nav-title","каталог")
+          li(class="nav__accordion")
+            btn(type="button" class="nav-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true") каталог
+            ul(id="collapseOne" class="collapse")
+              li
+                a(href="#") Лицо
+              li
+                a(href="#") Тело
+              li
+                a(href="#") Волосы
+              li
+                a(href="#") Мужчинами
+              li
+                a(href="#") Детям
+              li
+                a(href="#") Аксессуары
+              li
+                a(href="#") Бренды
+              li
+                a(href="#") Акции
+
           +nav("#","nav-title","доставка и оплата")
           +nav("#","nav-title","о нас")
           +nav("#","nav-title","блог")
