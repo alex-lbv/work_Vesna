@@ -104,9 +104,29 @@
         }
       }
 
+      &:first-of-type {
+        .main-tabs__title {
+          &:after {
+            @media screen and(max-width: 991px) {
+              left: -13px;
+            }
+          }
+
+          &.active:after {
+            @media screen and(max-width: 991px) {
+              width: 128px;
+            }
+          }
+        }
+      }
+
       &:last-of-type {
         .main-tabs__title {
           &:after {
+            @media screen and(max-width: 991px) {
+              left: -13px;
+            }
+
             @media screen and(min-width: 992px) {
               left: -52px;
             }
